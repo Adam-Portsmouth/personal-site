@@ -160,7 +160,7 @@
     background: var(--teal);
     padding: 18px 6vw;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 40px;
   }
@@ -338,7 +338,7 @@
   </div>
 
   <div class="countdown">
-    <div class="countdown-label">YEAR COUNTDOWN</div>
+    <div class="countdown-label">DAYS UNTIL CURRENT CONTRACT ENDS</div>
     <div class="countdown-units">
       <div class="unit"><span class="unit-num" id="cd-days">000</span><span class="unit-label">DAYS</span></div>
       <div class="unit"><span class="unit-num" id="cd-hours">00</span><span class="unit-label">HOURS</span></div>
@@ -421,7 +421,7 @@
       const minutes = Math.floor((totalSeconds % 3600) / 60);
       const seconds = totalSeconds % 60;
 
-      daysEl.textContent = pad(days, 3);
+      daysEl.textContent = String(days);
       hoursEl.textContent = pad(hours, 2);
       minutesEl.textContent = pad(minutes, 2);
       secondsEl.textContent = pad(seconds, 2);
