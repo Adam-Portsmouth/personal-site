@@ -3,7 +3,18 @@
    Add a new entry to the TOP of the array each day.
    Format: { date: 'YYYY-MM-DD', items: ['…', '…', '…'] }
    --------------------------------------------------------------- */
-window.UPDATES = [];
+window.UPDATES = [
+  {
+    date: '2026-05-08',
+    items: [
+      'Created and deployed personal website with update log functionality',
+      'Created the branding system for my business website',
+      'Researched git repositories and how they link to Netlify',
+      'Took stock of what avenues I have in the pipeline for further work',
+      'Outlined next steps for each'
+    ]
+  }
+];
 
 /* ---------------------------------------------------------------
    Render helpers — used by index.html and updates.html.
