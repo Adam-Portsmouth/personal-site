@@ -3,24 +3,7 @@
    Add a new entry to the TOP of the array each day.
    Format: { date: 'YYYY-MM-DD', items: ['…', '…', '…'] }
    --------------------------------------------------------------- */
-window.UPDATES = [
-  {
-    date: '2026-05-08',
-    items: [
-      'Update 01',
-      'Update 02',
-      'Update 03'
-    ]
-  },
-  {
-    date: '2026-05-07',
-    items: [
-      'Update 01',
-      'Update 02',
-      'Update 03'
-    ]
-  }
-];
+window.UPDATES = [];
 
 /* ---------------------------------------------------------------
    Render helpers — used by index.html and updates.html.
