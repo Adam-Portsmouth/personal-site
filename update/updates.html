@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Update log — Adam Portsmouth</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --teal: #2C5F5A;
+    --ink: #1D1D1D;
+    --offwhite: #F2EFE9;
+    --rule: #E0DBD3;
+    --midgrey: #8C8C8C;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html, body {
+    background: var(--teal);
+    color: var(--offwhite);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* ---------- Nav ---------- */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--teal);
+    padding: 28px 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-name {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--offwhite);
+  }
+
+  .nav-btn {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--offwhite);
+    background: transparent;
+    border: 1px solid var(--offwhite);
+    padding: 10px 28px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+    display: inline-block;
+  }
+
+  .nav-btn:hover {
+    background: var(--offwhite);
+    color: var(--teal);
+  }
+
+  /* ---------- Updates section ---------- */
+  .updates {
+    padding: 64px 6vw 120px;
+  }
+
+  .updates-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: start;
+  }
+
+  .updates-left {
+    position: sticky;
+    top: 120px;
+    align-self: start;
+  }
+
+  .updates-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: clamp(64px, 7vw, 104px);
+    line-height: 1.0;
+    color: var(--offwhite);
+    margin-bottom: 28px;
+  }
+
+  .updates-sub {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--offwhite);
+    max-width: 380px;
+    margin-bottom: 40px;
+  }
+
+  .updates-btn {
+    display: inline-block;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--teal);
+    background: var(--offwhite);
+    border: 1px solid var(--offwhite);
+    padding: 12px 28px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .updates-btn:hover {
+    background: transparent;
+    color: var(--offwhite);
+  }
+
+  .timeline {
+    list-style: none;
+    position: relative;
+    padding: 0 0 0 32px;
+    margin: 0;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 10px;
+    bottom: 10px;
+    width: 1px;
+    background: rgba(242, 239, 233, 0.35);
+  }
+
+  .timeline-entry {
+    position: relative;
+    padding-bottom: 44px;
+  }
+
+  .timeline-entry:last-child {
+    padding-bottom: 0;
+  }
+
+  .timeline-entry::before {
+    content: '';
+    position: absolute;
+    left: -32px;
+    top: 4px;
+    width: 17px;
+    height: 17px;
+    border: 1.5px solid rgba(242, 239, 233, 0.85);
+    border-radius: 50%;
+    background: var(--teal);
+    box-sizing: border-box;
+  }
+
+  .timeline-date {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    color: var(--offwhite);
+    margin-bottom: 14px;
+  }
+
+  .timeline-items {
+    list-style: disc;
+    padding-left: 18px;
+    margin: 0;
+  }
+
+  .timeline-items li {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--offwhite);
+  }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 900px) {
+    .updates {
+      padding: 48px 6vw 96px;
+    }
+    .updates-grid {
+      grid-template-columns: 1fr;
+      gap: 56px;
+    }
+    .updates-left {
+      position: static;
+    }
+    .updates-sub {
+      max-width: none;
+    }
+  }
+
+  @media (max-width: 700px) {
+    nav {
+      padding: 20px 6vw;
+    }
+    .nav-name {
+      font-size: 11px;
+    }
+    .nav-btn {
+      font-size: 11px;
+      padding: 8px 18px;
+      letter-spacing: 0.08em;
+    }
+    .updates {
+      padding: 40px 6vw 80px;
+    }
+    .updates-title {
+      font-size: clamp(48px, 13vw, 72px);
+    }
+    .updates-sub {
+      font-size: 14px;
+    }
+    .timeline-date,
+    .timeline-items li {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    nav {
+      padding: 18px 5vw;
+    }
+    .nav-name {
+      font-size: 10px;
+      letter-spacing: 0.07em;
+    }
+    .nav-btn {
+      font-size: 10px;
+      padding: 7px 12px;
+      letter-spacing: 0.06em;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-name">ADAM PORTSMOUTH</div>
+    <a href="index.html" class="nav-btn">← BACK</a>
+  </nav>
+
+  <section class="updates">
+    <div class="updates-grid">
+      <aside class="updates-left">
+        <h2 class="updates-title">Update log.</h2>
+        <p class="updates-sub">Check in daily to see what I've been working on to achieve my goals.</p>
+        <a href="index.html" class="updates-btn">← BACK</a>
+      </aside>
+      <div class="updates-right">
+        <ol class="timeline" id="timeline-all"></ol>
+      </div>
+    </div>
+  </section>
+
+<script src="updates.js"></script>
+<script>
+  if (window.renderTimeline) {
+    window.renderTimeline('timeline-all');
+  }
+</script>
+
+</body>
+</html>

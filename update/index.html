@@ -47,7 +47,7 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    background: var(--offwhite);
+    background: transparent;
     padding: 28px 6vw;
     display: flex;
     align-items: center;
@@ -206,8 +206,8 @@
     font-size: 12px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--offwhite);
-    background: transparent;
+    color: var(--teal);
+    background: var(--offwhite);
     border: 1px solid var(--offwhite);
     padding: 12px 28px;
     text-decoration: none;
@@ -216,8 +216,8 @@
   }
 
   .updates-btn:hover {
-    background: var(--offwhite);
-    color: var(--teal);
+    background: transparent;
+    color: var(--offwhite);
   }
 
   .timeline {
@@ -289,7 +289,7 @@
     left: 0;
     right: 0;
     background: var(--teal);
-    border-top: 2px solid var(--offwhite);
+    border-bottom: 2px solid var(--offwhite);
     padding: 18px 6vw;
     display: flex;
     align-items: center;
@@ -493,7 +493,7 @@
     <div class="rule"></div>
 
     <div class="body-line">
-      Currently building my Learning & Development Consulting company.
+      Working on <span class="accent">five ambitious goals</span> to make myself useful, competent and to set my family up for financial freedom.
     </div>
   </div>
 
@@ -502,7 +502,7 @@
       <aside class="updates-left">
         <h2 class="updates-title">Update log.</h2>
         <p class="updates-sub">Check in daily to see what I've been working on to achieve my goals.</p>
-        <a href="updates.html" class="updates-btn">SEE ALL UPDATES</a>
+        <a href="updates.html" class="updates-btn">WELCOME BACK ↗</a>
       </aside>
       <div class="updates-right">
         <ol class="timeline" id="timeline-home"></ol>
@@ -511,7 +511,7 @@
   </section>
 
   <div class="countdown">
-    <div class="countdown-label">DAYS UNTIL CURRENT CONTRACT ENDS</div>
+    <div class="countdown-label">YEAR COUNTDOWN</div>
     <div class="countdown-units">
       <div class="unit"><span class="unit-num" id="cd-days">000</span><span class="unit-label">DAYS</span></div>
       <div class="unit"><span class="unit-num" id="cd-hours">00</span><span class="unit-label">HOURS</span></div>
@@ -587,7 +587,7 @@
       return s.length >= w ? s : '0'.repeat(w - s.length) + s;
     }
 
-    const target = new Date('2026-07-31T23:59:59');
+    const target = new Date('2027-05-06T00:00:00');
 
     function tick() {
       const now = new Date();
@@ -600,7 +600,7 @@
       const minutes = Math.floor((totalSeconds % 3600) / 60);
       const seconds = totalSeconds % 60;
 
-      daysEl.textContent = String(days);
+      daysEl.textContent = pad(days, 3);
       hoursEl.textContent = pad(hours, 2);
       minutesEl.textContent = pad(minutes, 2);
       secondsEl.textContent = pad(seconds, 2);
