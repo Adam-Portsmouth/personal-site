@@ -9,7 +9,7 @@ window.UPDATES = [
     items: [
       'Started planning how I can add more income streams to my business and created next steps for each',
       'Wrote 1,000 words',
-      'Continued proposal for first digital training resource for Infinity Wellbeing & Coaching client'
+      'Finished and sent proposal for first digital training resource to Infinity Wellbeing & Coaching client'
     ]
   },
   {
