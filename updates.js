@@ -5,6 +5,14 @@
    --------------------------------------------------------------- */
 window.UPDATES = [
   {
+    date: '2026-05-10',
+    items: [
+      'Started planning how I can add more income streams to my business and created next steps for each',
+      'Wrote 1,000 words',
+      'Continued proposal for first digital training resource for Infinity Wellbeing & Coaching client'
+    ]
+  },
+  {
     date: '2026-05-09',
     items: [
       'Started working on problem statement for core service',
