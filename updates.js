@@ -5,6 +5,15 @@
    --------------------------------------------------------------- */
 window.UPDATES = [
   {
+    date: '2026-05-11',
+    items: [
+      'Followed up with pipeline contacts about availability for future work',
+      'Wrote 1,000 words',
+      'Created and sent a \'Project Initiation\' workflow to ICW client to streamline all future projects',
+      'Decided on direction for first book'
+    ]
+  },
+  {
     date: '2026-05-10',
     items: [
       'Started planning how I can add more income streams to my business and created next steps for each',
