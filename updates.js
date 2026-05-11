@@ -9,7 +9,7 @@ window.UPDATES = [
     items: [
       'Followed up with pipeline contacts about availability for future work',
       'Wrote 1,000 words',
-      'Created and sent a \'Project Initiation\' workflow to ICW client to streamline all future projects',
+      'Created and sent a \'Project Initiation\' workflow to <a href="https://infinitywellbeingcoaching.com/" target="_blank">ICW</a> client to streamline all future projects',
       'Decided on direction for first book'
     ]
   },
@@ -18,7 +18,7 @@ window.UPDATES = [
     items: [
       'Started planning how I can add more income streams to my business and created next steps for each',
       'Wrote 1,000 words',
-      'Finished and sent proposal for first digital training resource to Infinity Wellbeing & Coaching client'
+      'Finished and sent proposal for first digital training resource to <a href="https://infinitywellbeingcoaching.com/" target="_blank">Infinity Wellbeing & Coaching</a> client'
     ]
   },
   {
@@ -27,7 +27,7 @@ window.UPDATES = [
       'Started working on problem statement for core service',
       'Planned structure for \'framework stress test\' automation',
       'Wrote 1,000 words',
-      'Continued proposal for first digital training resource for Infinity Wellbeing & Coaching client'
+      'Continued proposal for first digital training resource for <a href="https://infinitywellbeingcoaching.com/" target="_blank">Infinity Wellbeing & Coaching</a> client'
     ]
   },
   {
