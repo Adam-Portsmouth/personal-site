@@ -5,6 +5,15 @@
    --------------------------------------------------------------- */
 window.UPDATES = [
   {
+    date: '2026-05-12',
+    items: [
+      'Had to troubleshoot business email and domain',
+      'Set up infrastructure for <a href="https://www.pathwaytalentdevelopment.com/" target="_blank">Pathway Talent Development</a> website',
+      'Wrote 1,000 words',
+      'Finished plan for business simulation MVP. Will be creating and running first iteration tomorrow.'
+    ]
+  },
+  {
     date: '2026-05-11',
     items: [
       'Followed up with pipeline contacts about availability for future work',
