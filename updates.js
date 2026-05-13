@@ -5,6 +5,17 @@
    --------------------------------------------------------------- */
 window.UPDATES = [
   {
+    date: '2026-05-13',
+    items: [
+      'Wrote 1,000 words',
+      'Progressed <a href="https://infinitywellbeingcoaching.com/" target="_blank">IWC</a> project as far as I could',
+      'Set up call with <a href="https://infinitywellbeingcoaching.com/" target="_blank">IWC</a> client to discuss next steps',
+      'Started writing proposal for a new L&D service for a client',
+      'Created simulation automation for <a href="https://www.pathwaytalentdevelopment.com/" target="_blank">PTD</a> marketing and continuous improvement service',
+      'Simulated 30 \'iterations\' of service, refining based on feedback and results each 10 iterations'
+    ]
+  },
+  {
     date: '2026-05-12',
     items: [
       'Had to troubleshoot business email and domain',
