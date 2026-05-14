@@ -5,6 +5,16 @@
    --------------------------------------------------------------- */
 window.UPDATES = [
   {
+    date: '2026-05-14',
+    items: [
+      'Wrote 1,000 words',
+      'Re-wrote service proposal',
+      'Sent <a href="https://infinitywellbeingcoaching.com/" target="_blank">IWC</a> client re-initiation document for new project',
+      'Started writing a white paper',
+      'Started posting on LinkedIn again'
+    ]
+  },
+  {
     date: '2026-05-13',
     items: [
       'Wrote 1,000 words',
