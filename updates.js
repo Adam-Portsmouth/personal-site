@@ -5,6 +5,16 @@
    --------------------------------------------------------------- */
 window.UPDATES = [
   {
+    date: '2026-05-18',
+    items: [
+      'Wrote 5,000+ words',
+      'Realised I have a potentially valuable product to create that I personally would have paid for',
+      'Sourced, edited, and wrote 80% of this product',
+      'Created roadmap to get reviews for, validate, and monetise this product. I have a lot of faith in this product as it would have meant a lot to me personally earlier on in my career. I think that emotional attatchment there is valuable',
+      'Outlined 2 case studies'
+    ]
+  },
+  {
     date: '2026-05-15',
     items: [
       'Wrote 1,000 words',
