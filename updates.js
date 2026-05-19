@@ -5,6 +5,15 @@
    --------------------------------------------------------------- */
 window.UPDATES = [
   {
+    date: '2026-05-19',
+    items: [
+      'Wrote 1,000 words',
+      'Wrote 2 case studies',
+      'Designed and built case studies pages on my <a href="https://www.pathwaytalentdevelopment.com/" target="_blank">Pathway Talent Development</a> website',
+      'Finished first draft of product documentation'
+    ]
+  },
+  {
     date: '2026-05-18',
     items: [
       'Wrote 5,000+ words',
