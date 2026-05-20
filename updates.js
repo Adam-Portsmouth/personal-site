@@ -5,6 +5,15 @@
    --------------------------------------------------------------- */
 window.UPDATES = [
   {
+    date: '2026-05-20',
+    items: [
+      'Wrote 1,000 words',
+      'Finished base content of product ready for packaging',
+      'Verbally agreed on new partnership with colleague. This will be a service/product based partnership to take the work we have been innovating to a wider audience/client base',
+      'Outlined my (very) ambitious revenue goal for the next two business years'
+    ]
+  },
+  {
     date: '2026-05-19',
     items: [
       'Wrote 1,000 words',
