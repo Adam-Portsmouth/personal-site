@@ -5,6 +5,14 @@
    --------------------------------------------------------------- */
 window.UPDATES = [
   {
+    date: '2026-05-26',
+    items: [
+      'Finished creating The L&D Credibility Toolkit',
+      'Reached out to network for volunteers to review Toolkit and sent to 8 people',
+      'Formally initiated and prepared partnership project with <a href="https://infinitywellbeingcoaching.com/" target="_blank">Infinity Wellbeing & Coaching</a>'
+    ]
+  },
+  {
     date: '2026-05-20',
     items: [
       'Wrote 1,000 words',
