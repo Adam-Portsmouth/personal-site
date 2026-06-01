@@ -5,6 +5,15 @@
    --------------------------------------------------------------- */
 window.UPDATES = [
   {
+    date: '2026-06-01',
+    items: [
+      'Wrote 3,000+ words',
+      'Added keystone article to <a href="https://www.pathwaytalentdevelopment.com/" target="_blank">Pathway Talent Development</a> website: <a href="https://pathwaytalentdevelopment.com/business-first-ld-philosophy" target="_blank">A Business-First L&D Strategy</a>',
+      'Fully fleshed out my L&D Service offering strategy ready for first partnership meeting',
+      'Prepared to provide value propositions to secure contract extension'
+    ]
+  },
+  {
     date: '2026-05-26',
     items: [
       'Finished creating The L&D Credibility Toolkit',
